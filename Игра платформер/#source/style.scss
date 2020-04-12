@@ -1,0 +1,85 @@
+@import "null.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$poppins: 'Poppins', sans-serif;
+body{
+    background: #333;
+}
+.background { background: rgb(52, 166, 251);
+table-layout: fixed;
+border-spacing: 0; }
+.background td { padding: 0; }
+.lava { background: rgb(255, 100, 100); }
+.wall { background: white; }
+
+.actor { position: absolute; }
+.coin { background: rgb(241, 229, 89); }
+.player { background: rgb(64, 64, 64); }
+
+.lost .player {
+background: rgb(160, 64, 64);
+}
+.won .player {
+box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
+
+.game {
+overflow: hidden;
+max-width: 600px;
+max-height: 450px;
+position: relative;
+}
+
+
+.hp{
+    padding-left: 10px;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    &__img{
+        width: 30px;
+    }
+    &__text{
+        padding-left: 10px;
+    }
+}
+
+.hidden{
+    display: none !important;
+}
+
+.restart{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    font-size: 30px;
+    font-family: $poppins;
+    text-transform: uppercase;
+    &__btn{
+        margin-left: 30px;
+        order: 2;
+        cursor: pointer;
+        background-color: rebeccapurple;
+        padding: 30px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .5s all ease 0s;
+        &:hover{
+            transform: scale(.9,.9);
+        }
+    }
+    &__txt{
+        order: 1;
+        background-color: rebeccapurple;
+        padding: 30px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .5s all ease 0s;
+        &:hover{
+            transform: scale(.9,.9);
+        }
+    }
+}
