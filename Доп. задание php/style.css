@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;    
+    border: 0;
+}
+
+
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+:focus,:active{outline:none;}
+a:focus,a:active{outline: none;}
+
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+
+input::-ms-clear{display: none;} /*крестик в инпутах в IE,например*/
+button{cursor: pointer;} /*При наведении на кнопку всегда замена курсора*/
+button::-moz-focus-inner{padding: 0;border: 0;} /*Лишние отступы в FF для кнопок*/
+a,a:visited{text-decoration: none;} /*Убираем подчеркивание ссылок*/
+a:hover{text-decoration: none;} /*Убираем подчеркивание ссылок*/
+ul li{list-style: none;} /*Убираем стили маркированных списков*/
+img{vertical-align: top;}
+
+body{
+    background: #333;
+}
+
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+table{
+    width: 100%;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+}
+th {
+background: #EAECF0;
+color: black;
+padding: 10px 20px;
+}
+th, td {
+border-style: solid;
+border-width: 0 1px 1px 0;
+border-color: #CACED3;
+padding: 5px 10px;
+}
+td {
+background: #F8F9FA;
+}
